@@ -198,7 +198,7 @@
           <h2 class="h5 fw-semibold text-dark mb-3">${product.name}</h2>
           
           <!-- Description -->
-          <p class="text-muted mb-3 scroll-text" style="max-height: 100px; overflow-y: auto;">
+          <p class="text-muted mb-3 scroll-text" style="max-height: 100px; overflow-y: auto; ">
             ${product.raw_snippet}
           </p>
           
@@ -208,7 +208,7 @@
               product.area_of_application
                 ? `
               <div class="d-flex mb-2">
-                <span class="fw-medium text-dark" style="width: 6rem;">Area:</span>
+                <span class="fw-medium text-dark" style="width: 6rem; font-weight: bold;">Area:</span>
                 <span class="text-muted">${product.area_of_application}</span>
               </div>
             `
@@ -219,7 +219,7 @@
               product.method_of_application || product["method of Application"]
                 ? `
               <div class="d-flex mb-2">
-                <span class="fw-medium text-dark" style="width: 6rem;">Method:</span>
+                <span class="fw-medium text-dark" style="width: 6rem; font-weight: bold;">Method:</span>
                 <span class="text-muted">${
                   product.method_of_application ||
                   product["method of Application"]
@@ -233,7 +233,7 @@
               product.coverage
                 ? `
               <div class="d-flex mb-2">
-                <span class="fw-medium text-dark" style="width: 6rem;">Coverage:</span>
+                <span class="fw-medium text-dark" style="width: 6rem; font-weight: bold;">Coverage:</span>
                 <span class="text-muted">${product.coverage}</span>
               </div>
             `
@@ -244,7 +244,7 @@
               product.finish
                 ? `
               <div class="d-flex mb-2">
-                <span class="fw-medium text-dark" style="width: 6rem;">Finish:</span>
+                <span class="fw-medium text-dark" style="width: 6rem; font-weight: bold;">Finish:</span>
                 <span class="text-muted">${product.finish}</span>
               </div>
             `
@@ -255,7 +255,7 @@
               product.packing_available
                 ? `
               <div class="d-flex mb-2">
-                <span class="fw-medium text-dark" style="width: 6rem;">Sizes:</span>
+                <span class="fw-medium text-dark" style="width: 6rem; font-weight: bold;">Sizes:</span>
                 <span class="text-muted">${product.packing_available}</span>
               </div>
             `

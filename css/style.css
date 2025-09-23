@@ -395,3 +395,28 @@
         background-size: cover;
     }
 }
+
+.card-hover {
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card-hover:hover {
+  background-color: #FFE468; /* Light yellow */
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-hover:hover p {
+    color: black;
+}
+.card-hover img {
+  transition: transform 0.3s ease-in-out;
+}
+.card-hover:hover img {
+  transform: scale(1.08); /* slight image zoom */
+}
+.card-hover:hover  {
+  background-color: #f0c725b4;
+  transform: translateY(-2px);
+}
