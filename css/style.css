@@ -110,6 +110,16 @@
     font-weight: 600;
 }
 
+/* custom hover class  */
+
+.text-hover{
+    color: white;
+}
+
+.text-hover:hover{
+    color: #FFE468;
+}
+
 @media (min-width: 992px) {
     .navbar-dark .navbar-nav .nav-link::before {
         position: absolute;
