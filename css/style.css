@@ -397,26 +397,130 @@
 }
 
 .card-hover {
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
+
 .card-hover:hover {
-  background-color: #FFE468; /* Light yellow */
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background-color: #FFE468;
+    /* Light yellow */
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card-hover:hover p {
     color: black;
 }
+
 .card-hover img {
-  transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
+
 .card-hover:hover img {
-  transform: scale(1.08); /* slight image zoom */
+    transform: scale(1.08);
+    /* slight image zoom */
 }
-.card-hover:hover  {
-  background-color: #f0c725b4;
-  transform: translateY(-2px);
+
+.card-hover:hover {
+    background-color: #f0c725b4;
+    transform: translateY(-2px);
+}
+
+
+/* word animations */
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Float Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1s forwards;
+}
+
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.animate-float {
+    /* Float elements should be visible initially, 
+               as the animation is continuous, not an entry transition. */
+    animation: float 2s ease-in-out infinite;
+}
+
+
+
+/* Defines the slideUp transition */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Defines the fadeIn transition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Defines the floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Moves up 10px */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
